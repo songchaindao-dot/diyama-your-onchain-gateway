@@ -14,7 +14,45 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      exchange_requests: {
+        Row: {
+          created_at: string
+          full_name: string
+          id: string
+          kwacha_amount: number
+          notes: string | null
+          phone_number: string
+          session_id: string
+          status: string
+          updated_at: string
+          usdc_amount: number
+        }
+        Insert: {
+          created_at?: string
+          full_name: string
+          id?: string
+          kwacha_amount: number
+          notes?: string | null
+          phone_number: string
+          session_id: string
+          status?: string
+          updated_at?: string
+          usdc_amount: number
+        }
+        Update: {
+          created_at?: string
+          full_name?: string
+          id?: string
+          kwacha_amount?: number
+          notes?: string | null
+          phone_number?: string
+          session_id?: string
+          status?: string
+          updated_at?: string
+          usdc_amount?: number
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
