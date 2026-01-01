@@ -1,10 +1,24 @@
 import { MainLayout } from "@/components/layout/MainLayout";
+import { LearnHero } from "@/components/learn/LearnHero";
+import { TheProblem } from "@/components/learn/TheProblem";
+import { TheSolution } from "@/components/learn/TheSolution";
+import { RealExamples } from "@/components/learn/RealExamples";
+import { KeyConcepts } from "@/components/learn/KeyConcepts";
+import { GettingStarted } from "@/components/learn/GettingStarted";
+import { WhyBase } from "@/components/learn/WhyBase";
+import { LearnCTA } from "@/components/learn/LearnCTA";
 
 const Learn = () => (
   <MainLayout>
-    <div className="px-4 py-8 text-center">
-      <h1 className="text-3xl font-display font-bold gradient-text">Learn Page</h1>
-      <p className="text-muted-foreground mt-2">Coming soon...</p>
+    <div className="max-w-7xl mx-auto">
+      <LearnHero />
+      <TheProblem />
+      <TheSolution />
+      <RealExamples />
+      <KeyConcepts />
+      <GettingStarted />
+      <WhyBase />
+      <LearnCTA />
     </div>
   </MainLayout>
 );
