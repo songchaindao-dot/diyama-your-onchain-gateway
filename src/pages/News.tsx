@@ -14,8 +14,8 @@ const newsItems = [
     highlight: true
   },
   {
-    title: "Music Streaming Arrives on Base with $ongChainn",
-    description: "Musicians can now share and stream their work on Base through $ongChainn. The platform features curated tracks, community Town Squares, and the tagline 'Building culture before ownership' - connecting artists directly with fans onchain.",
+    title: "Music Ownership for Fans & Artists Arrives on Base",
+    description: "$ongChainn brings shared music ownership to Base - where fans and musicians co-own tracks together. Stream curated music, join community Town Squares, and 'Build culture before ownership' onchain.",
     date: "2025",
     source: "songchainn.xyz",
     url: "https://www.songchainn.xyz",
