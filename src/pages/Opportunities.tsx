@@ -82,6 +82,19 @@ const opportunities = [
       "Commitment to learning"
     ],
     ideal: "Builders seeking guidance and expertise"
+  },
+  {
+    title: "Music Tokenization on Vault.fm",
+    description: "Musicians can now tokenize their work on Base. Vault.fm lets artists share exclusive content, limited drops, and build direct fan connections. Artists like James Blake and Sullivan King are already using it.",
+    reward: "Fan Revenue",
+    type: "Creator Platform",
+    link: "https://vault.fm",
+    requirements: [
+      "Original music or content",
+      "Apply for artist beta access",
+      "Build your fan community"
+    ],
+    ideal: "Musicians, producers, DJs, and music creators"
   }
 ];
 
