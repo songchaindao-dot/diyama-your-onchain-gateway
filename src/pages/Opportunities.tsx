@@ -84,17 +84,17 @@ const opportunities = [
     ideal: "Builders seeking guidance and expertise"
   },
   {
-    title: "Music Streaming on $ongChainn",
-    description: "Musicians can share their work on Base through $ongChainn. Stream curated tracks, join community Town Squares, and build culture before ownership with direct fan connections onchain.",
-    reward: "Fan Revenue",
+    title: "Music Ownership on $ongChainn",
+    description: "A platform where musicians and fans share in music ownership together on Base. Artists release tracks, fans become co-owners, and everyone builds culture before ownership through community Town Squares.",
+    reward: "Shared Ownership Revenue",
     type: "Creator Platform",
     link: "https://www.songchainn.xyz",
     requirements: [
-      "Original music or content",
+      "Original music or content (artists)",
       "Sign up with email or Base Wallet",
-      "Build your fan community in Town Squares"
+      "Join Town Squares to discover and co-own music (fans)"
     ],
-    ideal: "Musicians, producers, DJs, and music creators"
+    ideal: "Musicians, producers, fans, and music collectors"
   }
 ];
 

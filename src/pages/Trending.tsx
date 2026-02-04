@@ -60,9 +60,9 @@ const trendingProjects = [
   },
   {
     name: "$ongChainn",
-    description: "The audience experience for music on Base. Stream curated tracks, join community Town Squares, and build culture before ownership. Connect with Base Wallet to unlock onchain features.",
+    description: "Music ownership for fans and artists together on Base. Stream tracks, co-own music with your favorite artists, and build culture before ownership in community Town Squares.",
     category: "Music",
-    subcategory: "Streaming",
+    subcategory: "Ownership",
     url: "https://www.songchainn.xyz",
     stats: "Music Platform",
     icon: Music
