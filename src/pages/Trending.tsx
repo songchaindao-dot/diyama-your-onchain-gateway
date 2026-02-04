@@ -1,7 +1,7 @@
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, TrendingUp, Users, Zap, Gamepad2, Wallet, BarChart3 } from "lucide-react";
+import { ExternalLink, TrendingUp, Users, Zap, Gamepad2, Wallet, BarChart3, Music } from "lucide-react";
 
 const trendingProjects = [
   {
@@ -57,15 +57,24 @@ const trendingProjects = [
     url: "https://0xppl.com",
     stats: "Social Feed",
     icon: Users
+  },
+  {
+    name: "Vault.fm",
+    description: "The next evolution of music ownership. Artists like James Blake, Sullivan King, and Daniel Allan use Vault to share exclusive content, drops, and build direct fan connections onchain.",
+    category: "Music",
+    subcategory: "Creator Tools",
+    url: "https://vault.fm",
+    stats: "Music Platform",
+    icon: Music
   }
 ];
 
 const ecosystemCategories = [
   { name: "DeFi", count: "150+", description: "Exchanges, lending, stablecoins" },
   { name: "Consumer", count: "100+", description: "Social, gaming, entertainment" },
+  { name: "Music", count: "15+", description: "Music NFTs, creator tools" },
   { name: "Infrastructure", count: "80+", description: "Developer tools, oracles, bridges" },
   { name: "Wallet", count: "30+", description: "Self-custody, smart wallets" },
-  { name: "Onramp", count: "20+", description: "Fiat-to-crypto services" },
   { name: "AI", count: "25+", description: "AI-powered applications" }
 ];
 

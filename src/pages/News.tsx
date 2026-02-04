@@ -5,13 +5,31 @@ import { ExternalLink, Newspaper, Calendar, Megaphone, ArrowRight } from "lucide
 
 const newsItems = [
   {
+    title: "The Base App Is Now Open To Everyone, Everywhere",
+    description: "The new Base App is available in more than 140 countries worldwide. An everything app for social, trading, and payments with countless ways to earn. Download it today to discover, connect, and grow onchain.",
+    date: "December 2025",
+    source: "blog.base.org",
+    url: "https://blog.base.org/baseapp",
+    type: "Global Launch",
+    highlight: true
+  },
+  {
+    title: "Music Tokenization Comes to Base",
+    description: "Musicians can now tokenize their work on Base through Vault.fm. Artists like James Blake, Sullivan King, and Daniel Allan are using the platform to share exclusive content, drops, and build direct fan connections onchain.",
+    date: "2025",
+    source: "vault.fm",
+    url: "https://vault.fm",
+    type: "Music & Creators",
+    highlight: true
+  },
+  {
     title: "Base's Next Chapter: Everything Announced At A New Day One",
     description: "Base is evolving to be more than a chain. Introducing the Base app (formerly Coinbase Wallet), an everything app to create, earn, trade, and discover onchain.",
     date: "July 2025",
     source: "blog.base.org",
     url: "https://blog.base.org/a-new-day-one",
     type: "Major Announcement",
-    highlight: true
+    highlight: false
   },
   {
     title: "Coinbase and Shopify Bring USDC Payments on Base",
