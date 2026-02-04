@@ -7,11 +7,13 @@ import { KeyConcepts } from "@/components/learn/KeyConcepts";
 import { GettingStarted } from "@/components/learn/GettingStarted";
 import { WhyBase } from "@/components/learn/WhyBase";
 import { LearnCTA } from "@/components/learn/LearnCTA";
+import { LessonsSection } from "@/components/learn/LessonsSection";
 
 const Learn = () => (
   <MainLayout>
     <div className="max-w-7xl mx-auto">
       <LearnHero />
+      <LessonsSection />
       <TheProblem />
       <TheSolution />
       <RealExamples />
