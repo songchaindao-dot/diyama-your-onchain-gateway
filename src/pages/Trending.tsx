@@ -59,11 +59,11 @@ const trendingProjects = [
     icon: Users
   },
   {
-    name: "Vault.fm",
-    description: "The next evolution of music ownership. Artists like James Blake, Sullivan King, and Daniel Allan use Vault to share exclusive content, drops, and build direct fan connections onchain.",
+    name: "$ongChainn",
+    description: "The audience experience for music on Base. Stream curated tracks, join community Town Squares, and build culture before ownership. Connect with Base Wallet to unlock onchain features.",
     category: "Music",
-    subcategory: "Creator Tools",
-    url: "https://vault.fm",
+    subcategory: "Streaming",
+    url: "https://www.songchainn.xyz",
     stats: "Music Platform",
     icon: Music
   }
