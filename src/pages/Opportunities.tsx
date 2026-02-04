@@ -84,15 +84,15 @@ const opportunities = [
     ideal: "Builders seeking guidance and expertise"
   },
   {
-    title: "Music Tokenization on Vault.fm",
-    description: "Musicians can now tokenize their work on Base. Vault.fm lets artists share exclusive content, limited drops, and build direct fan connections. Artists like James Blake and Sullivan King are already using it.",
+    title: "Music Streaming on $ongChainn",
+    description: "Musicians can share their work on Base through $ongChainn. Stream curated tracks, join community Town Squares, and build culture before ownership with direct fan connections onchain.",
     reward: "Fan Revenue",
     type: "Creator Platform",
-    link: "https://vault.fm",
+    link: "https://www.songchainn.xyz",
     requirements: [
       "Original music or content",
-      "Apply for artist beta access",
-      "Build your fan community"
+      "Sign up with email or Base Wallet",
+      "Build your fan community in Town Squares"
     ],
     ideal: "Musicians, producers, DJs, and music creators"
   }
