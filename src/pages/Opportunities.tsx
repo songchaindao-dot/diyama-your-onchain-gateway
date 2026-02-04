@@ -2,7 +2,7 @@ import { MainLayout } from "@/components/layout/MainLayout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, DollarSign, Users, Rocket, Award, Calendar, ArrowRight } from "lucide-react";
+import { ExternalLink, DollarSign, Users, Rocket, Award, Calendar, ArrowRight, Music } from "lucide-react";
 
 const opportunities = [
   {
@@ -104,16 +104,16 @@ const Opportunities = () => (
       {/* Header */}
       <div className="text-center mb-8">
         <h1 className="text-3xl font-display font-bold gradient-text mb-3">
-          Builder Opportunities
+          Builder & Community Opportunities
         </h1>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          Real funding and support programs from Base. Whether you're just starting to experiment 
-          or ready to become a full-time founder, Base provides structured opportunities that grow with your ambitions.
+          Real funding, support programs, and community platforms from Base. Whether you're a builder starting to experiment, 
+          a musician sharing your art, or ready to become a full-time founder, Base provides opportunities that grow with your ambitions.
         </p>
       </div>
 
       {/* Quick Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
         <Card className="bg-card/50 border-border/50">
           <CardContent className="p-4 text-center">
             <DollarSign className="h-6 w-6 mx-auto mb-2 text-primary" />
@@ -133,6 +133,13 @@ const Opportunities = () => (
             <Users className="h-6 w-6 mx-auto mb-2 text-primary" />
             <p className="text-2xl font-bold">$1M+</p>
             <p className="text-xs text-muted-foreground">Base Batches</p>
+          </CardContent>
+        </Card>
+        <Card className="bg-card/50 border-border/50">
+          <CardContent className="p-4 text-center">
+            <Music className="h-6 w-6 mx-auto mb-2 text-primary" />
+            <p className="text-2xl font-bold">$ongChainn</p>
+            <p className="text-xs text-muted-foreground">Music Ownership</p>
           </CardContent>
         </Card>
         <Card className="bg-card/50 border-border/50">
