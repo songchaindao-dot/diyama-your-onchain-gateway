@@ -2,98 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Diyama Design System - Futuristic Neon Theme
-   Primary: #0052FF (blue), Accent: #00F0FF (cyan), Light: #CDE3FF
+/* Diyama Design System - Clean Light Theme
+   Primary: #0052FF (blue), Accent: #00D4E6 (teal), Surfaces: white/soft gray
    All colors in HSL format
 */
 
 @layer base {
   :root {
-    /* Diyama Dark Theme - Default */
-    --background: 0 0% 0%;
-    --foreground: 210 100% 90%;
+    /* Diyama Light Theme */
+    --background: 210 40% 98%;
+    --foreground: 220 25% 15%;
 
-    --card: 220 20% 6%;
-    --card-foreground: 210 100% 90%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 15%;
 
-    --popover: 220 20% 8%;
-    --popover-foreground: 210 100% 90%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 15%;
 
     /* Primary - Base Blue #0052FF */
     --primary: 220 100% 50%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Deep blue-gray */
-    --secondary: 220 30% 15%;
-    --secondary-foreground: 210 100% 90%;
+    /* Secondary - Soft blue-gray */
+    --secondary: 220 20% 94%;
+    --secondary-foreground: 220 25% 25%;
 
-    /* Muted - Subtle blue-gray */
-    --muted: 220 20% 12%;
-    --muted-foreground: 210 30% 60%;
+    /* Muted - Light gray-blue */
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 10% 45%;
 
-    /* Accent - Neon Cyan #00F0FF */
-    --accent: 185 100% 50%;
-    --accent-foreground: 0 0% 0%;
+    /* Accent - Teal */
+    --accent: 185 100% 42%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 84% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Success - Green for completed states */
-    --success: 142 76% 45%;
+    /* Success */
+    --success: 142 76% 40%;
     --success-foreground: 0 0% 100%;
 
-    /* Warning - Yellow for pending states */
+    /* Warning */
     --warning: 45 93% 50%;
-    --warning-foreground: 0 0% 0%;
+    --warning-foreground: 220 25% 15%;
 
-    --border: 220 20% 18%;
-    --input: 220 20% 12%;
+    --border: 220 15% 88%;
+    --input: 220 15% 90%;
     --ring: 220 100% 50%;
 
     --radius: 0.75rem;
 
     /* Custom Diyama tokens */
     --glow-primary: 220 100% 50%;
-    --glow-accent: 185 100% 50%;
-    --text-light: 210 100% 90%;
-    --text-muted: 210 30% 70%;
+    --glow-accent: 185 100% 42%;
+    --text-light: 220 25% 15%;
+    --text-muted: 220 10% 45%;
 
     /* Gradient stops */
     --gradient-start: 220 100% 50%;
-    --gradient-end: 185 100% 50%;
+    --gradient-end: 185 100% 42%;
 
     /* Sidebar overrides */
-    --sidebar-background: 0 0% 3%;
-    --sidebar-foreground: 210 100% 90%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 25% 15%;
     --sidebar-primary: 220 100% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 20% 12%;
-    --sidebar-accent-foreground: 210 100% 90%;
-    --sidebar-border: 220 20% 15%;
+    --sidebar-accent: 220 15% 95%;
+    --sidebar-accent-foreground: 220 25% 15%;
+    --sidebar-border: 220 15% 88%;
     --sidebar-ring: 220 100% 50%;
-  }
-
-  /* Keep dark mode same as root since Diyama is dark-first */
-  .dark {
-    --background: 0 0% 0%;
-    --foreground: 210 100% 90%;
-    --card: 220 20% 6%;
-    --card-foreground: 210 100% 90%;
-    --popover: 220 20% 8%;
-    --popover-foreground: 210 100% 90%;
-    --primary: 220 100% 50%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 220 30% 15%;
-    --secondary-foreground: 210 100% 90%;
-    --muted: 220 20% 12%;
-    --muted-foreground: 210 30% 60%;
-    --accent: 185 100% 50%;
-    --accent-foreground: 0 0% 0%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 220 20% 18%;
-    --input: 220 20% 12%;
-    --ring: 220 100% 50%;
   }
 }
 
@@ -115,7 +92,7 @@
 @layer components {
   /* Glass morphism card */
   .glass-card {
-    @apply bg-card/40 backdrop-blur-xl border border-border/50 rounded-xl;
+    @apply bg-card/80 backdrop-blur-xl border border-border/50 rounded-xl shadow-sm;
   }
 
   /* Gradient text */
@@ -133,31 +110,31 @@
     @apply absolute -inset-px rounded-xl bg-gradient-to-r from-primary to-accent -z-10;
   }
 
-  /* Neon glow effects */
+  /* Soft glow effects (light-friendly) */
   .glow-primary {
-    box-shadow: 0 0 20px hsl(var(--primary) / 0.4), 0 0 40px hsl(var(--primary) / 0.2);
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.15), 0 0 40px hsl(var(--primary) / 0.08);
   }
 
   .glow-accent {
-    box-shadow: 0 0 20px hsl(var(--accent) / 0.4), 0 0 40px hsl(var(--accent) / 0.2);
+    box-shadow: 0 0 20px hsl(var(--accent) / 0.15), 0 0 40px hsl(var(--accent) / 0.08);
   }
 
   .glow-text {
-    text-shadow: 0 0 10px hsl(var(--primary) / 0.5), 0 0 20px hsl(var(--accent) / 0.3);
+    text-shadow: none;
   }
 
   /* Gradient button */
   .btn-gradient {
     @apply bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold
            px-6 py-3 rounded-lg transition-all duration-300 ease-out
-           hover:shadow-[0_0_30px_hsl(var(--primary)/0.5)] hover:scale-105;
+           hover:shadow-lg hover:scale-105;
   }
 
   /* Glass button */
   .btn-glass {
-    @apply bg-card/30 backdrop-blur-lg border border-border/50 text-foreground
-           px-6 py-3 rounded-lg transition-all duration-300 ease-out
-           hover:bg-card/50 hover:border-primary/50;
+    @apply bg-card/80 backdrop-blur-lg border border-border text-foreground
+           px-6 py-3 rounded-lg transition-all duration-300 ease-out shadow-sm
+           hover:bg-card hover:border-primary/50 hover:shadow-md;
   }
 
   /* Animated underline for links */
@@ -179,23 +156,13 @@
   /* Card hover effect */
   .card-hover {
     @apply transition-all duration-300 ease-out
-           hover:scale-[1.02] hover:border-primary/50
-           hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)];
+           hover:scale-[1.02] hover:border-primary/40
+           hover:shadow-lg;
   }
 
   /* Pulse animation for nav items */
   .nav-active {
     @apply text-primary;
-    animation: nav-pulse 2s ease-in-out infinite;
-  }
-
-  @keyframes nav-pulse {
-    0%, 100% {
-      filter: drop-shadow(0 0 8px hsl(var(--primary) / 0.6));
-    }
-    50% {
-      filter: drop-shadow(0 0 16px hsl(var(--primary) / 0.9));
-    }
   }
 
   /* Sparkle animation */
@@ -244,19 +211,19 @@
 
   /* Status badges */
   .badge-pending {
-    @apply bg-warning/20 text-warning border border-warning/30;
+    @apply bg-warning/10 text-warning border border-warning/20;
   }
 
   .badge-progress {
-    @apply bg-primary/20 text-primary border border-primary/30;
+    @apply bg-primary/10 text-primary border border-primary/20;
   }
 
   .badge-completed {
-    @apply bg-success/20 text-success border border-success/30;
+    @apply bg-success/10 text-success border border-success/20;
   }
 
   .badge-cancelled {
-    @apply bg-destructive/20 text-destructive border border-destructive/30;
+    @apply bg-destructive/10 text-destructive border border-destructive/20;
   }
 }
 
@@ -274,7 +241,7 @@
   /* Custom scrollbar */
   .scrollbar-custom {
     scrollbar-width: thin;
-    scrollbar-color: hsl(var(--primary) / 0.5) hsl(var(--muted));
+    scrollbar-color: hsl(var(--primary) / 0.3) hsl(var(--muted));
   }
 
   .scrollbar-custom::-webkit-scrollbar {
@@ -287,11 +254,11 @@
   }
 
   .scrollbar-custom::-webkit-scrollbar-thumb {
-    background: hsl(var(--primary) / 0.5);
+    background: hsl(var(--primary) / 0.3);
     border-radius: 3px;
   }
 
   .scrollbar-custom::-webkit-scrollbar-thumb:hover {
-    background: hsl(var(--primary));
+    background: hsl(var(--primary) / 0.5);
   }
 }
